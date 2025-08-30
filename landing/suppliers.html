@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الموردين - موثوق</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="w-full bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
+      <div class="text-2xl font-bold text-[#0ab3d4] tracking-widest">
+ <a href="index.html">
+            <img src="./assets/logo.png" class="w-[150px] h-[50px] object-cover" alt="موثوق">
+        </a>      </div>
+      <nav class="hidden md:flex space-x-0 space-x-reverse md:space-x-8 rtl:space-x-reverse">
+        <a href="index.html" class="hover:text-blue-600 transition">الرئيسية</a>
+        <a href="schools.html" class="hover:text-blue-600 transition">المدارس</a>
+        <a href="suppliers.html" class="hover:text-blue-600 transition">الموردين</a>
+        <a href="about.html" class="hover:text-blue-600 transition">من نحن</a>
+        <a href="privacy-policy.html" class="hover:text-blue-600 transition">سياسة الخصوصية</a>
+        <a href="terms-and-conditions.html" class="hover:text-blue-600 transition">الشروط والأحكام</a>
+        <a href="contact.html" class="hover:text-blue-600 transition mx-5">تواصل معنا</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-7 h-7 text-[#0ab3d4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <nav class="flex flex-col py-2 px-4 space-y-2">
+        <a href="index.html" class="hover:text-blue-600 transition">الرئيسية</a>
+        <a href="schools.html" class="hover:text-blue-600 transition">المدارس</a>
+        <a href="suppliers.html" class="hover:text-blue-600 transition">الموردين</a>
+        <a href="about.html" class="hover:text-blue-600 transition">من نحن</a>
+        <a href="privacy-policy.html" class="hover:text-blue-600 transition">سياسة الخصوصية</a>
+        <a href="terms-and-conditions.html" class="hover:text-blue-600 transition">الشروط والأحكام</a>
+        <a href="contact.html" class="hover:text-blue-600 transition mx-5">تواصل معنا</a>
+    </div>
+    <script>
+      // Mobile menu toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          menu.classList.toggle('animate-fade-in');
+        });
+      });
+    </script>
+  </header>
+
+  <!-- Content Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">الموردين</h2>
+      <p class="text-center text-gray-700">هنا يمكنك العثور على معلومات الموردين.</p>
+    </div>
+  </section>
+
+  <!-- All Suppliers Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">كل الموردين</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Example Supplier Card -->
+        <div class="bg-white shadow-md rounded-lg p-4">
+          <h3 class="text-xl font-bold text-[#0ab3d4] mb-2">اسم المورد</h3>
+          <p class="text-gray-700">وصف مختصر عن المورد.</p>
+        </div>
+        <!-- Add more supplier cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">تواصل معنا</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.560847123456!2d46.675295315003!3d24.71355118411696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f02bf12345678%3A0x1234567890abcdef!2z2YXYr9mK2YbYp9mF!5e0!3m2!1sar!2ssa!4v1693412345678!5m2!1sar!2ssa" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-[#0ab3d4] mb-4">بيانات الاتصال</h3>
+          <p class="text-gray-700 mb-2">📍 العنوان: الرياض، المملكة العربية السعودية</p>
+          <p class="text-gray-700 mb-2">📞 الهاتف: +966 123 456 789</p>
+          <p class="text-gray-700 mb-2">📧 البريد الإلكتروني: info@mothooq.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- سكشن جديد: تواصل معنا -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">تواصل معنا</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+       <!-- خريطة -->
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.560847123456!2d46.675295315003!3d24.71355118411696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f02bf12345678%3A0x1234567890abcdef!2z2YXYr9mK2YbYp9mF!5e0!3m2!1sar!2ssa!4v1693412345678!5m2!1sar!2ssa" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      
+      <!-- بيانات الاتصال -->
+      <div>
+        <h3 class="text-xl font-bold text-[#0ab3d4] mb-4">بيانات الاتصال</h3>
+        <p class="text-gray-700 mb-2">📍 العنوان: الرياض، المملكة العربية السعودية</p>
+        <p class="text-gray-700 mb-2">📞 الهاتف: +966 123 456 789</p>
+        <p class="text-gray-700 mb-2">📧 البريد الإلكتروني: info@mothooq.com</p>
+        <div class="flex gap-4 mt-4">
+          <a href="#" class="text-blue-600 hover:text-[#0ab3d4]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.6 8.6 0 01-2.72 1.04 4.27 4.27 0 00-7.29 3.89A12.13 12.13 0 013 4.89a4.27 4.27 0 001.32 5.7 4.23 4.23 0 01-1.94-.54v.05a4.27 4.27 0 003.42 4.18 4.3 4.3 0 01-1.93.07 4.27 4.27 0 003.99 2.97A8.57 8.57 0 012 19.54a12.07 12.07 0 006.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.36 8.36 0 0022.46 6z"/></a>
+          <a href="#" class="text-blue-600 hover:text-[#0ab3d4]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.6 8.06 8.19 8.96v-6.34h-2.47v-2.62h2.47v-2c0-2.44 1.49-3.78 3.67-3.78 1.04 0 1.94.08 2.2.11v2.55h-1.51c-1.18 0-1.41.56-1.41 1.38v1.8h2.82l-.37 2.62h-2.45v6.34c4.59-.9 8.19-4.55 8.19-8.96 0-5.5-4.46-9.96-9.96-9.96z"/></a>
+          <a href="#" class="text-blue-600 hover:text-[#0ab3d4]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.6 8.06 8.19 8.96v-6.34h-2.47v-2.62h2.47v-2c0-2.44 1.49-3.78 3.67-3.78 1.04 0 1.94.08 2.2.11v2.55h-1.51c-1.18 0-1.41.56-1.41 1.38v1.8h2.82l-.37 2.62h-2.45v6.34c4.59-.9 8.19-4.55 8.19-8.96 0-5.5-4.46-9.96-9.96-9.96z"/></a>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0ab3d4] text-white py-8 mt-12">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">© 2025 موثوق. جميع الحقوق محفوظة.</div>
+      <div class="flex space-x-0 space-x-reverse md:space-x-6 rtl:space-x-reverse mb-4 md:mb-0">
+        <a href="#home" class="hover:underline">الرئيسية</a>
+        <a href="#schools" class="hover:underline">المدارس</a>
+        <a href="#suppliers" class="hover:underline mx-4">الموردين</a>
+      </div>
+      <div class="flex space-x-0 space-x-reverse md:space-x-4 rtl:space-x-reverse">
+          <a href="#" class="text-blue-600 hover:text-[#fff]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.6 8.6 0 01-2.72 1.04 4.27 4.27 0 00-7.29 3.89A12.13 12.13 0 013 4.89a4.27 4.27 0 001.32 5.7 4.23 4.23 0 01-1.94-.54v.05a4.27 4.27 0 003.42 4.18 4.3 4.3 0 01-1.93.07 4.27 4.27 0 003.99 2.97A8.57 8.57 0 012 19.54a12.07 12.07 0 006.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.36 8.36 0 0022.46 6z"/></a>
+          <a href="#" class="text-blue-600 hover:text-[#fff]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.6 8.06 8.19 8.96v-6.34h-2.47v-2.62h2.47v-2c0-2.44 1.49-3.78 3.67-3.78 1.04 0 1.94.08 2.2.11v2.55h-1.51c-1.18 0-1.41.56-1.41 1.38v1.8h2.82l-.37 2.62h-2.45v6.34c4.59-.9 8.19-4.55 8.19-8.96 0-5.5-4.46-9.96-9.96-9.96z"/></a>
+          <a href="#" class="text-blue-600 hover:text-[#fff]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.6 8.06 8.19 8.96v-6.34h-2.47v-2.62h2.47v-2c0-2.44 1.49-3.78 3.67-3.78 1.04 0 1.94.08 2.2.11v2.55h-1.51c-1.18 0-1.41.56-1.41 1.38v1.8h2.82l-.37 2.62h-2.45v6.34c4.59-.9 8.19-4.55 8.19-8.96 0-5.5-4.46-9.96-9.96-9.96z"/></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
