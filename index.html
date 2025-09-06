@@ -20,6 +20,25 @@
       });
     });
   </script>
+
+  <style>
+    .feature-card{
+      padding: 0 !important;
+      position: relative;
+    }
+    .feature-card img{width: 100%; height: 100%;}
+    .feature-card .content{
+          position: absolute;
+          right: 50%;
+          width: 100%;
+          right: 4%;
+          top: 63%;
+          color: #fff !important;
+          opacity: 0;
+          transition: .3s all;
+    }
+    .feature-card:hover .content{opacity: 1;}
+  </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
   <!-- Header -->
@@ -31,11 +50,10 @@
         </a>      </div>
       <nav class="hidden md:flex space-x-0 space-x-reverse md:space-x-8 rtl:space-x-reverse">
         <a href="index.html" class="hover:text-blue-600 transition">الرئيسية</a>
+                <a href="about.html" class="hover:text-blue-600 transition">من نحن</a>
         <a href="schools.html" class="hover:text-blue-600 transition">المدارس</a>
         <a href="suppliers.html" class="hover:text-blue-600 transition">الموردين</a>
-        <a href="about.html" class="hover:text-blue-600 transition">من نحن</a>
-        <a href="privacy-policy.html" class="hover:text-blue-600 transition">سياسة الخصوصية</a>
-        <a href="terms-and-conditions.html" class="hover:text-blue-600 transition">الشروط والأحكام</a>
+        <a href="parteners.html" class="hover:text-blue-600 transition">شركاؤنا</a>
         <a href="contact.html" class="hover:text-blue-600 transition mx-5">تواصل معنا</a>
       </nav>
       <button id="menu-btn" class="md:hidden focus:outline-none">
@@ -78,7 +96,8 @@
     
   </section>
 
-  
+ 
+
   <!-- كيف تعمل المنصة Section -->
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
@@ -110,18 +129,14 @@
   </section>
 
   <!-- قصص نجاح Section -->
-  <section class="py-16 bg-blue-50">
+  <section class="py-16 bg-blue-50" style="background-repeat: no-repeat;background-size: cover; background-image: url('https://erepublic.brightspotcdn.com/dims4/default/0dfd983/2147483647/strip/true/crop/940x490+0+21/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.us-west-2.amazonaws.com%2Ffc%2Fad%2F0aeec7a4bd471936b0375736b01e%2Fshutterstock-776289724.jpg');">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">قصص نجاح من عملائنا</h2>
+      <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">تميز مع منصة موثوق</h2>
+      <p class="text-xl text-[#fff] text-center">
+        انضم إلينا وشارك موهبتك مع جمهورنا الواسع. نحن نبحث عن المواهب المميزة في جميع المجالات
+      </p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-white rounded-xl shadow p-6 flex flex-col gap-2">
-          <p class="text-gray-700">"منصة موثوق سهلت علينا التواصل مع الموردين بشكل كبير وساعدتنا في الحصول على أفضل العروض."</p>
-          <div class="text-[#0ab3d4] font-bold">مدرسة الإبداع</div>
-        </div>
-        <div class="bg-white rounded-xl shadow p-6 flex flex-col gap-2">
-          <p class="text-gray-700">"أصبحنا نتابع كل عملياتنا مع المدارس بشكل موثق واحترافي. تجربة رائعة!"</p>
-          <div class="text-[#0ab3d4] font-bold">مورد التقنية الحديثة</div>
-        </div>
+       <img src="" alt="">
       </div>
     </div>
   </section>
@@ -130,16 +145,28 @@
   <section id="features" class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-[#0ab3d4]">المميزات</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Feature 1 -->
-        <div class="flex flex-col items-center text-center p-6 bg-blue-50 rounded-lg shadow hover:shadow-lg transition">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+         <div class="feature-card flex flex-col items-center text-center bg-white p-6 rounded-lg shadow">
+          <img src="https://leadschool.in/wp-content/uploads/2024/01/Which-is-the-best-all-in-one-school-management-system-in-India.png" alt="مدرسة" class="rounded-lg mb-4">
+          <div class="content">
+             <h3 class="text-xl font-bold text-[#0ab3d4] mb-2">خدمات المدارس</h3>
+              <p class="text-[#fff]">نوفر للمدارس منصة متكاملة لإدارة العروض والتعامل مع الموردين بكل سهولة وشفافية.</p>
+          </div>
+        </div>
+         <div class="feature-card flex flex-col items-center text-center bg-white p-6 rounded-lg shadow">
+          <img src="https://leadschool.in/wp-content/uploads/2024/01/Which-is-the-best-all-in-one-school-management-system-in-India.png" alt="مدرسة" class="rounded-lg mb-4">
+         <div class="content">
+           <h3 class="text-xl font-bold text-[#0ab3d4] mb-2">خدمات المدارس</h3>
+            <p class="text-[#fff]">نوفر للمدارس منصة متكاملة لإدارة العروض والتعامل مع الموردين بكل سهولة وشفافية.</p>
+         </div>
+        </div>
+        <!-- <div class="flex flex-col items-center text-center p-6 bg-blue-50 rounded-lg shadow hover:shadow-lg transition">
           <div class="mb-4 text-[#0ab3d4]">
             <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 11c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3zm0 0c0-1.657 1.343-3 3-3s3 1.343 3 3-1.343 3-3 3-3-1.343-3-3z"/></svg>
           </div>
           <h3 class="text-xl font-semibold mb-2">توثيق أولياء الأمور</h3>
           <p class="text-gray-600">تحقق آمن من بيانات أولياء الأمور لضمان المصداقية والشفافية.</p>
         </div>
-        <!-- Feature 2 -->
         <div class="flex flex-col items-center text-center p-6 bg-blue-50 rounded-lg shadow hover:shadow-lg transition">
           <div class="mb-4 text-[#0ab3d4]">
             <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 7v4a1 1 0 001 1h3v2a1 1 0 001 1h2v2a1 1 0 001 1h4a1 1 0 001-1v-4a1 1 0 00-1-1h-3v-2a1 1 0 00-1-1h-2V8a1 1 0 00-1-1H4a1 1 0 00-1 1z"/></svg>
@@ -147,7 +174,6 @@
           <h3 class="text-xl font-semibold mb-2">إدارة الموردين</h3>
           <p class="text-gray-600">منصة موحدة لإدارة بيانات الموردين وتقييمهم بسهولة.</p>
         </div>
-        <!-- Feature 3 -->
         <div class="flex flex-col items-center text-center p-6 bg-blue-50 rounded-lg shadow hover:shadow-lg transition">
           <div class="mb-4 text-[#0ab3d4]">
             <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 17l4 4 4-4m-4-5v9"/></svg>
@@ -155,7 +181,6 @@
           <h3 class="text-xl font-semibold mb-2">طلب عروض الأسعار</h3>
           <p class="text-gray-600">سهولة إرسال واستقبال عروض الأسعار بين المدارس والموردين.</p>
         </div>
-        <!-- Feature 4 -->
         <div class="flex flex-col items-center text-center p-6 bg-blue-50 rounded-lg shadow hover:shadow-lg transition">
           <div class="mb-4 text-[#0ab3d4]">
             <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
@@ -163,14 +188,13 @@
           <h3 class="text-xl font-semibold mb-2">إشعارات</h3>
           <p class="text-gray-600">تنبيهات فورية لمتابعة كل جديد في المنصة.</p>
         </div>
-        <!-- Feature 5 -->
         <div class="flex flex-col items-center text-center p-6 bg-blue-50 rounded-lg shadow hover:shadow-lg transition">
           <div class="mb-4 text-[#0ab3d4]">
             <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           </div>
           <h3 class="text-xl font-semibold mb-2">تقارير</h3>
           <p class="text-gray-600">تقارير شاملة لتحليل الأداء واتخاذ القرارات.</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -211,34 +235,8 @@
   </div>
 </section>
 
-<!-- سكشن جديد: تواصل معنا -->
-<section class="py-16 bg-white">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">تواصل معنا</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-       <!-- خريطة -->
-      <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.560847123456!2d46.675295315003!3d24.71355118411696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f02bf12345678%3A0x1234567890abcdef!2z2YXYr9mK2YbYp9mF!5e0!3m2!1sar!2ssa!4v1693412345678!5m2!1sar!2ssa" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-      
-      <!-- بيانات الاتصال -->
-      <div>
-        <h3 class="text-xl font-bold text-[#0ab3d4] mb-4">بيانات الاتصال</h3>
-        <p class="text-gray-700 mb-2">📍 العنوان: الرياض، المملكة العربية السعودية</p>
-        <p class="text-gray-700 mb-2">📞 الهاتف: +966 123 456 789</p>
-        <p class="text-gray-700 mb-2">📧 البريد الإلكتروني: info@mothooq.com</p>
-        <div class="flex gap-4 mt-4">
-          <a href="#" class="text-blue-600 hover:text-[#0ab3d4]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.6 8.6 0 01-2.72 1.04 4.27 4.27 0 00-7.29 3.89A12.13 12.13 0 013 4.89a4.27 4.27 0 001.32 5.7 4.23 4.23 0 01-1.94-.54v.05a4.27 4.27 0 003.42 4.18 4.3 4.3 0 01-1.93.07 4.27 4.27 0 003.99 2.97A8.57 8.57 0 012 19.54a12.07 12.07 0 006.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.36 8.36 0 0022.46 6z"/></a>
-          <a href="#" class="text-blue-600 hover:text-[#0ab3d4]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.6 8.06 8.19 8.96v-6.34h-2.47v-2.62h2.47v-2c0-2.44 1.49-3.78 3.67-3.78 1.04 0 1.94.08 2.2.11v2.55h-1.51c-1.18 0-1.41.56-1.41 1.38v1.8h2.82l-.37 2.62h-2.45v6.34c4.59-.9 8.19-4.55 8.19-8.96 0-5.5-4.46-9.96-9.96-9.96z"/></a>
-          <a href="#" class="text-blue-600 hover:text-[#0ab3d4]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.6 8.06 8.19 8.96v-6.34h-2.47v-2.62h2.47v-2c0-2.44 1.49-3.78 3.67-3.78 1.04 0 1.94.08 2.2.11v2.55h-1.51c-1.18 0-1.41.56-1.41 1.38v1.8h2.82l-.37 2.62h-2.45v6.34c4.59-.9 8.19-4.55 8.19-8.96 0-5.5-4.46-9.96-9.96-9.96z"/></a>
-        </div>
-      </div>
-     
-    </div>
-  </div>
-</section>
 
-<!-- شركاؤنا Section -->
+ <!-- شركاؤنا Section -->
   <section class="py-16 bg-blue-50">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">شركاؤنا</h2>
@@ -254,25 +252,59 @@
       </div>
     </div>
   </section>
-
-  
-
-  <!-- Footer -->
-  <footer class="bg-[#0ab3d4] text-white py-8 mt-12">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-      <div class="mb-4 md:mb-0">© 2025 موثوق. جميع الحقوق محفوظة.</div>
-      <div class="flex space-x-0 space-x-reverse md:space-x-6 rtl:space-x-reverse mb-4 md:mb-0">
-        <a href="#home" class="hover:underline">الرئيسية</a>
-        <a href="#schools" class="hover:underline">المدارس</a>
-        <a href="#suppliers" class="hover:underline mx-4">الموردين</a>
-      </div>
-      <div class="flex space-x-0 space-x-reverse md:space-x-4 rtl:space-x-reverse">
-          <a href="#" class="text-blue-600 hover:text-[#fff]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.6 8.6 0 01-2.72 1.04 4.27 4.27 0 00-7.29 3.89A12.13 12.13 0 013 4.89a4.27 4.27 0 001.32 5.7 4.23 4.23 0 01-1.94-.54v.05a4.27 4.27 0 003.42 4.18 4.3 4.3 0 01-1.93.07 4.27 4.27 0 003.99 2.97A8.57 8.57 0 012 19.54a12.07 12.07 0 006.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.36 8.36 0 0022.46 6z"/></a>
-          <a href="#" class="text-blue-600 hover:text-[#fff]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.6 8.06 8.19 8.96v-6.34h-2.47v-2.62h2.47v-2c0-2.44 1.49-3.78 3.67-3.78 1.04 0 1.94.08 2.2.11v2.55h-1.51c-1.18 0-1.41.56-1.41 1.38v1.8h2.82l-.37 2.62h-2.45v6.34c4.59-.9 8.19-4.55 8.19-8.96 0-5.5-4.46-9.96-9.96-9.96z"/></a>
-          <a href="#" class="text-blue-600 hover:text-[#fff]"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04c-5.5 0-9.96 4.46-9.96 9.96 0 4.41 3.6 8.06 8.19 8.96v-6.34h-2.47v-2.62h2.47v-2c0-2.44 1.49-3.78 3.67-3.78 1.04 0 1.94.08 2.2.11v2.55h-1.51c-1.18 0-1.41.56-1.41 1.38v1.8h2.82l-.37 2.62h-2.45v6.34c4.59-.9 8.19-4.55 8.19-8.96 0-5.5-4.46-9.96-9.96-9.96z"/></a>
-      </div>
+  <footer class="bg-gray-100 py-12 border-t border-gray-200 mt-16">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-2xl font-bold text-blue-600 mb-4">
+                                <img src="./assets/logo.png" class="w-[150px] h-[50px] object-cover" alt="موثوق">
+                </h3>
+                <p class="text-gray-700 mb-4">قنوات الأقمار الصناعية الرائدة في المنطقة، نقدم محتوى متنوع ومميز
+                    لجميع أفراد العائلة.</p>
+                <div class="flex space-x-4 space-x-reverse">
+                    <a href="#" class="text-blue-600 hover:text-blue-400"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-pink-600 hover:text-pink-400"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-red-600 hover:text-red-400"><i class="fab fa-youtube text-xl"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-[#0ab3d4]">روابط سريعة</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors">الرئيسية</a></li>
+                    <li><a href="privacy-policy.html" class="text-gray-700 hover:text-blue-600 transition-colors">سياسة الخصوصية،</a></li>
+                    <li><a href="terms-and-conditions.html" class="text-gray-700 hover:text-blue-600 transition-colors">الشروط والأحكام</a></li>
+                    <!-- <li><a href="about.html" class="text-gray-700 hover:text-blue-600 transition-colors">من نحن</a>
+                    </li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition-colors">اتصل
+                            بنا</a></li> -->
+                   
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-[#0ab3d4]">خدماتنا</h4>
+                <ul class="space-y-2">
+                    <li><a href="parteners.html" class="text-gray-700 hover:text-blue-600 transition-colors">شركاؤنا</a></li>
+                    <li><a href="schools.html" class="text-gray-700 hover:text-blue-600 transition-colors">المدارس</a></li>
+                    <li><a href="suppliers.html" class="text-gray-700 hover:text-blue-600 transition-colors">الموردين</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-[#0ab3d4]">معلومات الاتصال</h4>
+                <div class="space-y-2 text-gray-700">
+                    <p><i class="fas fa-phone ml-2"></i> +968 1234 5678</p>
+                    <p><i class="fas fa-envelope ml-2"></i> info@sada.com</p>
+                    <p><i class="fas fa-map-marker-alt ml-2"></i> السعوديه - الرياض</p>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-500">
+            <p>© 2025 موثوق. جميع الحقوق محفوظة.</p>
+        </div>
     </div>
-  </footer>
+</footer>
+
 
   <!-- Animations -->
   <style>
