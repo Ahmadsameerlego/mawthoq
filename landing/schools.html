@@ -26,13 +26,12 @@
  <a href="index.html">
             <img src="./assets/logo.png" class="w-[150px] h-[50px] object-cover" alt="موثوق">
         </a>      </div>
-      <nav class="hidden md:flex space-x-0 space-x-reverse md:space-x-8 rtl:space-x-reverse">
+       <nav class="hidden md:flex space-x-0 space-x-reverse md:space-x-8 rtl:space-x-reverse">
         <a href="index.html" class="hover:text-blue-600 transition">الرئيسية</a>
+                <a href="about.html" class="hover:text-blue-600 transition">من نحن</a>
         <a href="schools.html" class="hover:text-blue-600 transition">المدارس</a>
         <a href="suppliers.html" class="hover:text-blue-600 transition">الموردين</a>
-        <a href="about.html" class="hover:text-blue-600 transition">من نحن</a>
-        <a href="privacy-policy.html" class="hover:text-blue-600 transition">سياسة الخصوصية</a>
-        <a href="terms-and-conditions.html" class="hover:text-blue-600 transition">الشروط والأحكام</a>
+        <a href="parteners.html" class="hover:text-blue-600 transition">شركاؤنا</a>
         <a href="contact.html" class="hover:text-blue-600 transition mx-5">تواصل معنا</a>
       </nav>
       <button id="menu-btn" class="md:hidden focus:outline-none">
@@ -93,17 +92,19 @@
         <label>المدينه</label>
         <select wire:model="form.country_id" class="form-control" style="text-align: right;">
           <option value="">اختر المدينه</option>
-          <option value="2">السعوديه</option>
+                   <option value="2">عمان</option>
+          <option value="2">الزرقاء</option>
+
         </select>
       </div>
 
-      <div class="">
-        <label>المدينة</label>
+     <div class="">
+        <label>المنطقة</label>
         <select wire:model="form.city_id" class="form-control" style="text-align: right;">
           <option value="">اختر المنطقة،</option>
-          <option value="25">الدوادمي</option>
-          <option value="24">نجران</option>
-          <option value="23">جازان</option>
+          <option value="25">شارع الحريه</option>
+          <option value="24">عبدون</option>
+          <option value="23">النزهه</option>
         </select>
       </div>
     </div>
@@ -196,7 +197,7 @@
                 <h4 class="text-lg font-semibold mb-4 text-[#0ab3d4]">معلومات الاتصال</h4>
                 <div class="space-y-2 text-gray-700">
                     <p><i class="fas fa-phone ml-2"></i> +968 1234 5678</p>
-                    <p><i class="fas fa-envelope ml-2"></i> info@sada.com</p>
+                    <p><i class="fas fa-envelope ml-2"></i> info@maousok.com</p>
                     <p><i class="fas fa-map-marker-alt ml-2"></i> السعوديه - الرياض</p>
                 </div>
             </div>
