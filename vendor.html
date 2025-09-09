@@ -437,22 +437,52 @@
 </head>
 <body class="bg-white text-gray-900 font-sans">
     <!-- Header -->
+  <!-- Header -->
   <header class="w-full bg-white shadow-sm sticky top-0 z-50">
     <div class="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
       <div class="text-2xl font-bold text-[#0ab3d4] tracking-widest">
- <a href="index.html">
-            <img src="./assets/logo.png" class="w-[150px] h-[50px] object-cover" alt="موثوق">
-        </a>      </div>
-       <nav class="hidden md:flex space-x-0 space-x-reverse md:space-x-8 rtl:space-x-reverse">
+        <a href="index.html">
+          <img src="./assets/logo.png" class="w-[150px] h-[50px] object-cover" alt="موثوق">
+        </a>
+      </div>
+      <nav class="hidden md:flex space-x-0 space-x-reverse md:space-x-8 rtl:space-x-reverse">
         <a href="index.html" class="hover:text-blue-600 transition">الرئيسية</a>
-                <a href="about.html" class="hover:text-blue-600 transition">من نحن</a>
+        <a href="about.html" class="hover:text-blue-600 transition">من نحن</a>
         <a href="schools.html" class="hover:text-blue-600 transition">المدارس</a>
         <a href="suppliers.html" class="hover:text-blue-600 transition">الموردين</a>
         <a href="parteners.html" class="hover:text-blue-600 transition">شركاؤنا</a>
         <a href="contact.html" class="hover:text-blue-600 transition mx-5">تواصل معنا</a>
       </nav>
+
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <button
+          class="flex items-center gap-[6px]  py-[12px] rounded-ful uppercase text-sm truncate font-primary-semibold w-auto border rounded-lg px-[16px] hover:scale-110 transition-all duration-300 text-inverted border-white "
+          aria-label="Change Language" data-original-size="14px" style="font-size: 14px;">
+          <span
+            data-original-size="14px" class="text-[#0ab3d4]" style="font-size: 14px;"><svg width="15" height="14" fill="none"
+              xmlns="http://www.w3.org/2000/svg" class="transition-all duration-300 fill-[#0ab3d4]" alt="language"
+              data-original-size="14px" style="font-size: 14px;">
+              <path
+                d="M7.5.094A6.906 6.906 0 1 0 14.406 7 6.914 6.914 0 0 0 7.5.094Zm5.82 6.375h-2.646c-.093-1.89-.682-3.684-1.668-5.114A5.857 5.857 0 0 1 13.32 6.47ZM7.5 12.836C6.256 11.49 5.502 9.583 5.39 7.531h4.22c-.112 2.05-.866 3.96-2.11 5.305ZM5.39 6.47c.112-2.05.864-3.96 2.11-5.305C8.744 2.51 9.498 4.417 9.61 6.469H5.39Zm.604-5.114C5.008 2.785 4.419 4.58 4.326 6.47H1.68a5.857 5.857 0 0 1 4.313-5.114ZM1.68 7.531h2.645c.093 1.89.682 3.684 1.668 5.114A5.856 5.856 0 0 1 1.68 7.53Zm7.325 5.114c.986-1.432 1.575-3.226 1.668-5.114h2.645a5.857 5.857 0 0 1-4.313 5.114Z"
+                data-original-size="14px" style="font-size: 14px;"></path>
+            </svg>
+          </span>
+          <p data-original-size="14px" style="font-size: 14px;">ar</p>
+        </button>
+        <a href="https://maousok-schools.vercel.app/"
+           target="_blank"
+          class="bg-[#0ab3d4] text-[#fff] px-8 py-3 rounded-full font-semibold shadow hover:bg-blue-50 hover:scale-105 transition">سجل
+          كمدرسة</a>
+        <a href="https://vendor-dashboard-mayw.vercel.app/supplier-login.html"
+         target="_blank"
+          class="bg-[#0ab3d4] text-[#fff] px-8 py-3 rounded-full font-semibold shadow hover:bg-blue-50 hover:scale-105 transition">سجل
+          كمورد</a>
+      </div>
+
       <button id="menu-btn" class="md:hidden focus:outline-none">
-        <svg class="w-7 h-7 text-[#0ab3d4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg class="w-7 h-7 text-[#0ab3d4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </button>
     </div>
     <!-- Mobile Menu -->
@@ -468,7 +498,7 @@
     </div>
     <script>
       // Mobile menu toggle
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('DOMContentLoaded', function () {
         const btn = document.getElementById('menu-btn');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => {

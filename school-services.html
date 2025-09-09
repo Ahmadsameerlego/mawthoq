@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات المدارس - موثوق</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
+  <!-- Header -->
+  <header class="w-full bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
+      <div class="text-2xl font-bold text-[#0ab3d4] tracking-widest">
+        <a href="index.html">
+          <img src="./assets/logo.png" class="w-[150px] h-[50px] object-cover" alt="موثوق">
+        </a>
+      </div>
+      <nav class="hidden md:flex space-x-0 space-x-reverse md:space-x-8 rtl:space-x-reverse">
+        <a href="index.html" class="hover:text-blue-600 transition">الرئيسية</a>
+        <a href="about.html" class="hover:text-blue-600 transition">من نحن</a>
+        <a href="schools.html" class="hover:text-blue-600 transition">المدارس</a>
+        <a href="suppliers.html" class="hover:text-blue-600 transition">الموردين</a>
+        <a href="parteners.html" class="hover:text-blue-600 transition">شركاؤنا</a>
+        <a href="contact.html" class="hover:text-blue-600 transition mx-5">تواصل معنا</a>
+      </nav>
+
+      <div class="flex flex-col md:flex-row justify-center gap-4">
+        <button
+          class="flex items-center gap-[6px]  py-[12px] rounded-ful uppercase text-sm truncate font-primary-semibold w-auto border rounded-lg px-[16px] hover:scale-110 transition-all duration-300 text-inverted border-white "
+          aria-label="Change Language" data-original-size="14px" style="font-size: 14px;">
+          <span
+            data-original-size="14px" class="text-[#0ab3d4]" style="font-size: 14px;"><svg width="15" height="14" fill="none"
+              xmlns="http://www.w3.org/2000/svg" class="transition-all duration-300 fill-[#0ab3d4]" alt="language"
+              data-original-size="14px" style="font-size: 14px;">
+              <path
+                d="M7.5.094A6.906 6.906 0 1 0 14.406 7 6.914 6.914 0 0 0 7.5.094Zm5.82 6.375h-2.646c-.093-1.89-.682-3.684-1.668-5.114A5.857 5.857 0 0 1 13.32 6.47ZM7.5 12.836C6.256 11.49 5.502 9.583 5.39 7.531h4.22c-.112 2.05-.866 3.96-2.11 5.305ZM5.39 6.47c.112-2.05.864-3.96 2.11-5.305C8.744 2.51 9.498 4.417 9.61 6.469H5.39Zm.604-5.114C5.008 2.785 4.419 4.58 4.326 6.47H1.68a5.857 5.857 0 0 1 4.313-5.114ZM1.68 7.531h2.645c.093 1.89.682 3.684 1.668 5.114A5.856 5.856 0 0 1 1.68 7.53Zm7.325 5.114c.986-1.432 1.575-3.226 1.668-5.114h2.645a5.857 5.857 0 0 1-4.313 5.114Z"
+                data-original-size="14px" style="font-size: 14px;"></path>
+            </svg>
+          </span>
+          <p data-original-size="14px" style="font-size: 14px;">ar</p>
+        </button>
+        <a href="https://maousok-schools.vercel.app/"
+           target="_blank"
+          class="bg-[#0ab3d4] text-[#fff] px-8 py-3 rounded-full font-semibold shadow hover:bg-blue-50 hover:scale-105 transition">سجل
+          كمدرسة</a>
+        <a href="https://vendor-dashboard-mayw.vercel.app/supplier-login.html"
+         target="_blank"
+          class="bg-[#0ab3d4] text-[#fff] px-8 py-3 rounded-full font-semibold shadow hover:bg-blue-50 hover:scale-105 transition">سجل
+          كمورد</a>
+      </div>
+
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-7 h-7 text-[#0ab3d4]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <nav class="flex flex-col py-2 px-4 space-y-2">
+        <a href="index.html" class="hover:text-blue-600 transition">الرئيسية</a>
+        <a href="schools.html" class="hover:text-blue-600 transition">المدارس</a>
+        <a href="suppliers.html" class="hover:text-blue-600 transition">الموردين</a>
+        <a href="about.html" class="hover:text-blue-600 transition">من نحن</a>
+        <a href="privacy-policy.html" class="hover:text-blue-600 transition">سياسة الخصوصية</a>
+        <a href="terms-and-conditions.html" class="hover:text-blue-600 transition">الشروط والأحكام</a>
+        <a href="contact.html" class="hover:text-blue-600 transition mx-5">تواصل معنا</a>
+    </div>
+    <script>
+      // Mobile menu toggle
+      document.addEventListener('DOMContentLoaded', function () {
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          menu.classList.toggle('animate-fade-in');
+        });
+      });
+    </script>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-r from-[#0ab3d4] to-[#089bb8] text-white text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-5xl font-bold mb-4">خدمات المدارس</h1>
+      <p class="text-lg">تعرف على خدمات المدارس التي نقدمها لدعم التعليم وتحسين التجربة التعليمية.</p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">مميزات خدمات المدارس</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 shadow-md rounded-lg p-6 text-center">
+          <i class="fas fa-chalkboard-teacher text-4xl text-[#0ab3d4] mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">تدريب المعلمين</h3>
+          <p class="text-gray-700">نوفر برامج تدريبية متقدمة للمعلمين لتحسين جودة التعليم.</p>
+        </div>
+        <div class="bg-gray-50 shadow-md rounded-lg p-6 text-center">
+          <i class="fas fa-school text-4xl text-[#0ab3d4] mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">تطوير المدارس</h3>
+          <p class="text-gray-700">نساعد في تحسين البنية التحتية والخدمات المدرسية.</p>
+        </div>
+        <div class="bg-gray-50 shadow-md rounded-lg p-6 text-center">
+          <i class="fas fa-book-reader text-4xl text-[#0ab3d4] mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">توفير الموارد</h3>
+          <p class="text-gray-700">نوفر الكتب والمناهج الدراسية بأعلى جودة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">معرض الصور</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <img src="./assets/school-reg.jpeg" alt="صورة 1" class="rounded-lg shadow-md">
+        <img src="./assets/school-reg.jpeg" alt="صورة 2" class="rounded-lg shadow-md">
+        <img src="./assets/school-reg.jpeg" alt="صورة 3" class="rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10 text-[#0ab3d4]">آراء المدارس</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 shadow-md rounded-lg p-6">
+          <p class="text-gray-700 mb-4">"خدمة ممتازة ساعدتنا في تحسين جودة التعليم!"</p>
+          <div class="text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="bg-gray-50 shadow-md rounded-lg p-6">
+          <p class="text-gray-700 mb-4">"تجربة رائعة وخدمات مميزة."</p>
+          <div class="text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-12 border-t border-gray-200 mt-16">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-2xl font-bold text-blue-600 mb-4">
+            <img src="./assets/logo.png" class="w-[150px] h-[50px] object-cover" alt="موثوق">
+          </h3>
+          <p class="text-gray-700 mb-4">قنوات الأقمار الصناعية الرائدة في المنطقة، نقدم محتوى متنوع ومميز لجميع أفراد العائلة.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-[#0ab3d4]">روابط سريعة</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition-colors">الرئيسية</a></li>
+            <li><a href="privacy-policy.html" class="text-gray-700 hover:text-blue-600 transition-colors">سياسة الخصوصية</a></li>
+            <li><a href="terms-and-conditions.html" class="text-gray-700 hover:text-blue-600 transition-colors">الشروط والأحكام</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-[#0ab3d4]">خدماتنا</h4>
+          <ul class="space-y-2">
+            <li><a href="schools.html" class="text-gray-700 hover:text-blue-600 transition-colors">المدارس</a></li>
+            <li><a href="suppliers.html" class="text-gray-700 hover:text-blue-600 transition-colors">الموردين</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-500">
+        <p>© 2025 موثوق. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
